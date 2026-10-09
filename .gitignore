@@ -1,18 +1,7 @@
-# Dependencies
-node_modules/
-
-# Runtime persistence (created by the server; never commit live data)
+﻿node_modules/
 data/
-*.aof
-dump.rdb.json
-*.rdb.json.tmp
-
-# Test temp dirs (created per run under tests/tmp*-<pid>)
 tests/tmp*/
-
-# OS / editor noise
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
+.env
+.env.*
+!.env.example
 *.log
