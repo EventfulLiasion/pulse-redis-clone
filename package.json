@@ -1,0 +1,35 @@
+{
+  "name": "pulse-redis-clone",
+  "version": "1.0.0",
+  "description": "Most complex Redis clone from scratch - RESP, all data types, transactions, pub/sub, streams, persistence, replication",
+  "type": "commonjs",
+  "main": "src/server.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/pulse-redis-clone.git"
+  },
+  "keywords": [
+    "redis",
+    "clone",
+    "resp",
+    "key-value-store",
+    "pubsub",
+    "streams",
+    "nodejs",
+    "zero-dependency"
+  ],
+  "scripts": {
+    "start": "node src/server.js",
+    "cli": "node src/cli.js",
+    "test": "node tests/run_all.js",
+    "test:run": "node tests/run.js",
+    "test:adv": "node tests/adversarial.js",
+    "test:phase2": "node tests/verify_phase2.js",
+    "test:persist": "node tests/verify_persistence.js",
+    "bench": "node tests/bench.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
